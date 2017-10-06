@@ -24,7 +24,7 @@ curr requires python3.6 or later, to install simply run:
 
 ## Configure
 
-curr saves config files can be found at `$XDG_CONFIG_HOME/curr/` directory (which is usually `~/home/user/curr`)
+curr saves config files can be found at `$XDG_CONFIG_HOME/curr/` directory (which is usually `~/home/user/curr`)  
 you can configure `currrc` for curr details:
 
     update_days = 5
