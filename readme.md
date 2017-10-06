@@ -17,6 +17,12 @@ curr requires python3.6 or later, to install simply run:
 
     pip install --user git+https://github.com/Granitosaurus/curr@v1.0
 
+on arch linux `curr` can be found on AUR:
+
+    pacaur -S curr
+    # or
+    yaourt -S curr
+
 ## Example
 
     $curr 100usd eur
@@ -24,7 +30,7 @@ curr requires python3.6 or later, to install simply run:
 
 ## Configure
 
-curr saves config files can be found at `$XDG_CONFIG_HOME/curr/` directory (which is usually `~/home/user/curr`)  
+curr saves config files can be found at `$XDG_CONFIG_HOME/curr/` directory (which is usually `~/home/user/curr`)
 you can configure `currrc` for curr details:
 
     update_days = 5
