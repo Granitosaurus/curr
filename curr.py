@@ -89,12 +89,13 @@ def cli(from_what, to_what, verbose, basedir):
         from_num = float(from_num)
     except Exception:
         exit(f'Invalid from_what value: {from_what}')
+        return
     from_cur = from_cur.strip().upper()
     conf = ConfigManager(basedir=basedir or CONFIG)
     data = conf.get_currency_data(from_cur)
     output_format = conf['output_format']
     click.echo(output_format.format(
-        result=data['rates'][to_what.upper()] * int(from_num),
+        result=data['rates'][to_what.upper()] * from_num,
         amount=from_num,
         currency=from_cur,
         result_cur=to_what))

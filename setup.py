@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='curr',
-    version='1.11',
+    version='1.12',
     url='https://github.com/Granitosaurus/curr',
     license='GPLv3',
     author='granitosaurus',
