@@ -88,7 +88,7 @@ def cli(from_what, to_what, verbose, basedir):
         from_num, from_cur = re.split('(\d+\.*\d*)', from_what)[1:]
         from_num = float(from_num)
     except Exception:
-        exit('Invalid input values')
+        exit(f'Invalid from_what value: {from_what}')
     from_cur = from_cur.strip().upper()
     conf = ConfigManager(basedir=basedir or CONFIG)
     data = conf.get_currency_data(from_cur)
