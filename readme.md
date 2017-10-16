@@ -15,7 +15,7 @@ curr
 
 curr requires python3.6 or later, to install simply run:
 
-    pip install --user git+https://github.com/Granitosaurus/curr@v1.0
+    pip install --user git+https://github.com/Granitosaurus/curr@v1.11
 
 on arch linux `curr` can be found on AUR:
 
